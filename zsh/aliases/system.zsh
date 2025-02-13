@@ -16,7 +16,7 @@ alias df='df -h' # Disk free with human-readable sizes
 alias du='du -h' # Disk usage with human-readable sizes
 alias free='top -l 1 | grep PhysMem' # Memory usage
 alias top='top -o cpu' # Sort top by CPU usage
-alias ps?='ps aux | grep' # Search processes
+alias 'ps?'='ps aux | grep' # Search processes
 
 # Network
 alias ip="ifconfig | grep 'inet ' | grep -v 127.0.0.1 | cut -d\\  -f2"
