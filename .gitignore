@@ -1,0 +1,55 @@
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+.Spotlight-V100
+.Trashes
+
+# Ignore backup files
+*.bak
+*.swp
+*~
+
+# Ignore local configuration overrides
+local.zsh
+custom.zsh
+.zsh_history
+.zcompdump*
+
+# Ignore sensitive information
+.env
+.env.*
+*.pem
+*.key
+*.crt
+
+# Ignore SSH files
+ssh/backup/*.gpg
+.ssh/
+id_*
+*.pub
+known_hosts
+authorized_keys
+
+# Ignore package manager files
+node_modules/
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore IDE settings
+.idea/
+.vscode/
+*.sublime-*
+
+# Ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Ignore logs
+*.log
+logs/

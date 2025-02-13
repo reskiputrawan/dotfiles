@@ -1,0 +1,38 @@
+# Required taps
+tap "homebrew/bundle"
+
+# Command Line Tools
+brew "git"               # Version control
+brew "vim"               # Text editor
+brew "tmux"              # Terminal multiplexer
+brew "wget"              # File downloader
+brew "curl"              # Data transfer tool
+brew "jq"                # JSON processor
+brew "gpg"               # GPG encryption tool
+brew "tree"              # Directory listing
+brew "htop"              # Process viewer
+brew "bat"               # Cat clone with syntax highlighting
+brew "ripgrep"           # Fast grep replacement
+brew "fd"                # Find replacement
+brew "fzf"               # Fuzzy finder
+brew "zsh"               # Shell
+brew "zsh-syntax-highlighting"
+brew "zsh-autosuggestions"
+
+# Development Tools
+brew "gh"                # GitHub CLI
+
+# Applications
+cask "iterm2"               # Terminal
+cask "rectangle"            # Window manager
+
+# Fonts
+cask "font-jetbrains-mono"
+cask "font-fira-code"
+cask "font-hack-nerd-font"
+
+# QuickLook Plugins
+cask "qlcolorcode"       # Preview source code with syntax highlighting
+cask "qlstephen"         # Preview plain text files without extension
+cask "qlmarkdown"        # Preview Markdown files
+cask "quicklook-json"    # Preview JSON files

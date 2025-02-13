@@ -1,0 +1,32 @@
+# Global SSH Configuration
+
+# Default connection settings
+Host *
+    # Security
+    Protocol 2
+    HashKnownHosts yes
+    StrictHostKeyChecking ask
+    VerifyHostKeyDNS yes
+    
+    # Connection settings
+    TCPKeepAlive yes
+    ServerAliveInterval 60
+    ServerAliveCountMax 30
+    
+    # Authentication
+    PubkeyAuthentication yes
+    IdentitiesOnly yes
+    AddKeysToAgent yes
+    
+    # Performance
+    Compression yes
+    ControlMaster auto
+    ControlPath ~/.ssh/control-%C
+    ControlPersist 1h
+
+# Example host configuration (customize as needed)
+# Host github.com
+#     HostName github.com
+#     User git
+#     IdentityFile ~/.ssh/github_ed25519
+#     AddKeysToAgent yes

@@ -1,0 +1,74 @@
+[user]
+    # These are example values. User should replace with their own
+    name = Your Name
+    email = your.email@example.com
+
+[core]
+    editor = vim
+    excludesfile = ~/.gitignore_global
+    whitespace = trailing-space,space-before-tab
+    autocrlf = input
+    safecrlf = true
+    pager = less -FX
+
+[init]
+    defaultBranch = main
+
+[color]
+    ui = auto
+    diff = auto
+    status = auto
+    branch = auto
+
+[push]
+    default = current
+    followTags = true
+
+[pull]
+    rebase = true
+
+[merge]
+    tool = vimdiff
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
+    algorithm = patience
+    compactionHeuristic = true
+
+[fetch]
+    prune = true
+
+[rebase]
+    autostash = true
+    autosquash = true
+
+[help]
+    autocorrect = 1
+
+[credential]
+    helper = osxkeychain
+
+[alias]
+    # View abbreviated SHA, description, and history graph
+    l = log --pretty=oneline -n 20 --graph --abbrev-commit
+
+    # View the current working tree status using the short format
+    s = status -s
+
+    # Show verbose output about tags, branches or remotes
+    tags = tag -l
+    branches = branch --all
+    remotes = remote --verbose
+
+    # Amend the currently staged files to the latest commit
+    amend = commit --amend --reuse-message=HEAD
+
+    # Interactive rebase with the given number of latest commits
+    reb = "!r() { git rebase -i HEAD~$1; }; r"
+
+    # List contributors with number of commits
+    contributors = shortlog --summary --numbered
+
+[format]
+    pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
